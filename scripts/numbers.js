@@ -29,15 +29,48 @@ num1 + num2 * 5 - 25 ... is not 575 ... it is 215 */
 
 /* If you want to avoid this precedence, use parenthesis
 (num1 + num2) * 5 - 25 */
+var pre = (num3 + num4) * 5;
+console.log("pre: " + pre);
 
 /* STEP 3: Increment and decrement operators
 ++ and -- are mostly found inside loops to move a counter variable to the next value when needed, either up or down. */
+var num5 = 20;
+console.log(num5++);
+console.log(num5);
+console.log(++num5);
+console.log(num5--);
+console.log(--num5);
 
 // Note 1 - you cannot increment/decrement a number directly
 // Note 2 - typing num++ or num-- in the console will output the number before incrementing or decrmenting - try ++num or --num, instead
 
 /* STEP 4: Assignment Operators
 = (assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment) */
+var num6 = 25;
+var final = 50;
+final += num6; // final = final + num6 // 75 = 50 + 25
+console.log(final);
+final -= num6; // final = final - num6 // 50 = 75 - 25
+console.log(final);
+final *= num6; // final = final * num6 // 1250 = 50 * 25
+console.log(final);
+final /= num6; // final = final / num6 // 50 = 1250 / 25
+console.log(final);
 
 /* STEP 5: Comparison Operators
 ===	(strict equality), !==	(strict-non-equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
+var num7a = 5;
+var num7b = "5";
+var num7c = [5];
+var num7d = ["5"];
+
+console.log(num7a == num7b);
+console.log(num7a === num7b);
+console.log(num7a == num7c);
+console.log(num7a != num7b);
+console.log(num7a !== num7b);
+
+console.log(num7a > 5);
+console.log(num7a >= 5);
+console.log(num7a <= 5);
+console.log(num7a < 5);
